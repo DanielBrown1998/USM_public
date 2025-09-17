@@ -99,31 +99,33 @@ bash: flutter test integration_test/app_test.dart
 <table>
   <tr>
     <td align="center">
-      <img src="app/lib/assets/readme_images/login.png" alt="Tela de Login" height="300">
+      <img src="lib/assets/readme_images/login.png" alt="Tela de Login" height="300">
       <br><sub>Tela de Login</sub>
     </td>
     <td align="center">
-      <img src="app/lib/assets/readme_images/home.png" alt="Tela Home" height="300">
+      <img src="lib/assets/readme_images/home.png" alt="Tela Home" height="300">
       <br><sub>Tela Home</sub>
     </td>
     <td align="center">
-      <img src="app/lib/assets/readme_images/add_monitoria.png" alt="Modal Adicionar Monitoria" height="300">
+      <img src="lib/assets/readme_images/add_monitoria.png" alt="Modal Adicionar Monitoria" height="300">
       <br><sub>Modal Adicionar Monitoria</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="app/lib/assets/readme_images/search_students.png" alt="Tela de Busca de Alunos" height="300">
+      <img src="lib/assets/readme_images/search_students.png" alt="Tela de Busca de Alunos" height="300">
       <br><sub>Busca de Alunos</sub>
     </td>
     <td align="center">
-      <img src="app/lib/assets/readme_images/list_all_monitorias.png" alt="Tela de Lista de Monitorias" height="300">
+      <img src="lib/assets/readme_images/list_all_monitorias.png" alt="Tela de Lista de Monitorias" height="300">
       <br><sub>Lista de Monitorias</sub>
     </td>
      <!-- Adicione mais <td> aqui se tiver mais imagens para esta linha -->
   </tr>
 </table>
 
-
+<div align="center">
+  <sub>Desenvolvido com ❤️ para a comunidade acadêmica da UERJ</sub>
+</div>
 
 
