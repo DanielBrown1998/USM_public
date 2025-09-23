@@ -1,0 +1,27 @@
+@startuml
+!theme vibrant
+title Activity Diagram - Login Flow
+
+start
+:User opens the app;
+:User sees the login screen;
+:User enters email and password;
+:User clicks the "Entrar" button;
+
+if (Input is valid?) then (yes)
+  :System authenticates the user;
+  if (Authentication is successful?) then (yes)
+    :Redirect to home screen;
+    stop
+  else (no)
+    :Show error message;
+  endif
+else (no)
+  :Show validation error;
+endif
+
+:User remains on the login screen;
+
+stop
+
+@enduml

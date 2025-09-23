@@ -1,0 +1,22 @@
+@startuml
+!theme vibrant
+title Activity Diagram - List Monitorias
+
+start
+:User opens the app;
+:User navigates to the monitorias screen;
+:System fetches the list of monitorias;
+:The list of monitorias is displayed;
+
+if (User applies a filter?) then (yes)
+  :System filters the list of monitorias;
+  :The filtered list of monitorias is displayed;
+endif
+
+if (User selects a monitoria?) then (yes)
+  :System displays the details of the selected monitoria;
+endif
+
+stop
+
+@enduml

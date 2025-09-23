@@ -104,3 +104,59 @@ bash: flutter test integration_test/app_test.dart
 | <img src="screenshots/usm10.png" width="250"> | <img src="screenshots/usm11.png" width="250"> | <img src="screenshots/usm12.png" width="250"> |
 | <img src="screenshots/usm13.png" width="250"> | <img src="screenshots/usm14.png" width="250"> | <img src="screenshots/usm15.png" width="250"> |
 | <img src="screenshots/usm16.png" width="250"> | <img src="screenshots/usm17.png" width="250"> | <img src="screenshots/usm18.png" width="250"> |
+
+
+
+## Diagramas
+
+### Diagrama de Casos de Uso
+
+![Diagrama de Casos de Uso](docs/use_case_diagram.png)
+
+### Diagrama de Componentes
+
+![Diagrama de Componentes](docs/component_diagram.png)
+
+### Diagrama de Classes
+
+![Diagrama de Classes](docs/class_diagram.png)
+
+### Diagramas de Sequência
+
+**Login**
+
+![Diagrama de Sequência - Login](docs/login_sequence_diagram.png)
+
+**Register**
+
+![Diagrama de Sequência - Register](docs/register_sequence_diagram.png)
+
+**Recover Password**
+
+![Diagrama de Sequência - Recover Password](docs/recover_password_sequence_diagram.png)
+
+**Add Monitoria**
+
+![Diagrama de Sequência - Add Monitoria](docs/add_monitoria_sequence_diagram.png)
+
+### Diagramas de Atividade
+
+**Login**
+
+![Diagrama de Atividade - Login](docs/login_activity_diagram.png)
+
+**Register**
+
+![Diagrama de Atividade - Register](docs/register_activity_diagram.png)
+
+**Recover Password**
+
+![Diagrama de Atividade - Recover Password](docs/recover_password_activity_diagram.png)
+
+**Add Monitoria**
+
+![Diagrama de Atividade - Add Monitoria](docs/add_monitoria_activity_diagram.png)
+
+**List Monitorias**
+
+![Diagrama de Atividade - List Monitorias](docs/list_monitorias_activity_diagram.png)

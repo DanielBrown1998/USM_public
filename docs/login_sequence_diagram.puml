@@ -1,0 +1,18 @@
+@startuml
+!theme vibrant
+title Sequence Diagram - Login
+
+actor User
+participant AuthenticateScreen
+participant UserRepository
+participant Firebase
+
+User -> AuthenticateScreen: Enters email and password
+User -> AuthenticateScreen: Clicks "Entrar" button
+AuthenticateScreen -> UserRepository: login(email, password)
+UserRepository -> Firebase: signInWithEmailAndPassword(email, password)
+Firebase --> UserRepository: Returns user credentials
+UserRepository --> AuthenticateScreen: Returns User object
+AuthenticateScreen -> User: Redirects to home screen
+
+@enduml

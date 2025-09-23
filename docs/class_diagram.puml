@@ -1,0 +1,37 @@
+@startuml
+!theme vibrant
+title Class Diagram - Authentication Feature
+
+class AuthenticateScreen {
+  +build(context: BuildContext): Widget
+  -_authenticate(controller: UserRepository, email: String, password: String): Future<User?>
+}
+
+class RegisterScreen {
+  +build(context: BuildContext): Widget
+  -register(context: BuildContext, controller: UserRepository, ...): Future<bool>
+}
+
+class RecoverPasswordScreen {
+  +build(context: BuildContext): Widget
+}
+
+class UserRepository {
+  +login(email: String, password: String): Future<User?>
+  +register(...): Future<User?>
+  +forgetPassword(email: String): Future<bool>
+  +user: User?
+}
+
+class User {
+  +firstName: String
+  +lastName: String
+  +email: String
+}
+
+AuthenticateScreen ..> UserRepository
+RegisterScreen ..> UserRepository
+RecoverPasswordScreen ..> UserRepository
+UserRepository --> User
+
+@enduml

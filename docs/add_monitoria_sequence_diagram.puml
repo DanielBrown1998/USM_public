@@ -1,0 +1,20 @@
+@startuml
+!theme vibrant
+title Sequence Diagram - Add Monitoria
+
+actor Admin
+participant HomeScreen
+participant alertDialogAddMonitoria
+participant MonitoriaRepository
+participant Firebase
+
+Admin -> HomeScreen: Clicks "Add Monitoria" button
+HomeScreen -> alertDialogAddMonitoria: Shows dialog
+alertDialogAddMonitoria -> Admin: Fills out monitoria details
+alertDialogAddMonitoria -> MonitoriaRepository: addMonitoria(monitoria)
+MonitoriaRepository -> Firebase: saveMonitoria(monitoria)
+Firebase --> MonitoriaRepository: Confirms data saved
+MonitoriaRepository --> alertDialogAddMonitoria: Returns success status
+alertDialogAddMonitoria -> HomeScreen: Closes dialog and shows success message
+
+@enduml

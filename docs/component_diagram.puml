@@ -1,0 +1,29 @@
+@startuml
+!theme vibrant
+title Component Diagram - USM Flutter App
+
+package "USM App" {
+  [main.dart] as Main
+}
+
+package "Core" {
+  [Errors]
+  [Firebase]
+  [Helpers]
+  [Routes]
+  [Theme]
+  [Utils]
+}
+
+package "Features" {
+  [Controller]
+  [Model]
+  [View]
+}
+
+Main --> Core
+Main --> Features
+
+Features --> Core
+
+@enduml

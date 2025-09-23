@@ -1,0 +1,27 @@
+@startuml
+!theme vibrant
+title Activity Diagram - Register
+
+start
+:User opens the app;
+:User navigates to the register screen;
+:User fills in the registration form;
+:User clicks the "Cadastrar" button;
+
+if (Input is valid?) then (yes)
+  :System creates a new user account;
+  if (Account created successfully?) then (yes)
+    :Redirect to home screen;
+    stop
+  else (no)
+    :Show error message;
+  endif
+else (no)
+  :Show validation error;
+endif
+
+:User remains on the register screen;
+
+stop
+
+@enduml

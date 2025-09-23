@@ -1,0 +1,20 @@
+@startuml
+!theme vibrant
+title Sequence Diagram - Register
+
+actor User
+participant RegisterScreen
+participant UserRepository
+participant Firebase
+
+User -> RegisterScreen: Fills out registration form
+User -> RegisterScreen: Clicks "Cadastrar" button
+RegisterScreen -> UserRepository: register(...)
+UserRepository -> Firebase: createUserWithEmailAndPassword(email, password)
+Firebase --> UserRepository: Returns user credentials
+UserRepository -> Firebase: Saves user data to Firestore
+Firebase --> UserRepository: Confirms data saved
+UserRepository --> RegisterScreen: Returns User object
+RegisterScreen -> User: Redirects to home screen
+
+@enduml

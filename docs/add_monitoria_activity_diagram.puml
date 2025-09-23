@@ -1,0 +1,30 @@
+@startuml
+!theme vibrant
+title Activity Diagram - Add Monitoria
+
+start
+:Admin opens the app;
+:Admin navigates to the home screen;
+:Admin clicks the "Add Monitoria" button;
+:A dialog appears to add a new monitoria;
+:Admin fills in the monitoria details;
+:Admin clicks the "Salvar" button;
+
+if (Input is valid?) then (yes)
+  :System saves the new monitoria;
+  if (Monitoria saved successfully?) then (yes)
+    :Show success message;
+    :The dialog closes;
+    stop
+  else (no)
+    :Show error message;
+  endif
+else (no)
+  :Show validation error;
+endif
+
+:Admin remains on the add monitoria dialog;
+
+stop
+
+@enduml

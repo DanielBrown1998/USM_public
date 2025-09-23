@@ -1,0 +1,25 @@
+@startuml
+!theme vibrant
+title Use Case Diagram - USM Flutter App
+
+left to right direction
+
+actor User
+actor Administrator as Admin
+
+rectangle "USM App" {
+  User -- (Register)
+  User -- (Login)
+  User -- (Logout)
+  User -- (Recover Password)
+
+  User -- (View Profile)
+  User -- (Edit Profile)
+
+  User -- (List Monitorias)
+  User -- (Search for Students)
+
+  Admin -- (Add Monitoria)
+}
+
+@enduml
